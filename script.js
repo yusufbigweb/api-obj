@@ -1,9 +1,11 @@
-const userId = prompt("Genrate Userid:")
+// // const userId = prompt("Genrate Userid:")
 
-function genraterUser(){
-    
-}
+// for(let name = 0; name < 100; name++){
+//         console.log(`This is Your Userid: ${name}`)
+// }
 
-for(let name = 0; name < 1; name++){
-        console.log(`This is Your Userid: ${userId}`)
-}
+fetch('https://jsonplaceholder.typicode.com/users/1')
+.then(function(resp){
+    console.log(resp)
+})
+.catch((error)=>(console.log(error)))
