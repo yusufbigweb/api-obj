@@ -4,8 +4,17 @@
 //         console.log(`This is Your Userid: ${name}`)
 // }
 
+
+//Simple Fetch 
+
 fetch('https://jsonplaceholder.typicode.com/users/1')
-.then(function(resp){
-    console.log(resp)
+    .then((response  => (response .json())))
+
+.then((data)=>{
+   const userName = document.querySelector('#user-name')
+   userName.textContent = data.name
+    const userEmail = document.querySelector('#user-email')
+    userEmail.textContent = data.email
+    const userAddress = document.querySelector('#user-address')
+    userEmail.textContent = data.address.street
 })
-.catch((error)=>(console.log(error)))
