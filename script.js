@@ -5,7 +5,7 @@
 // }
 
 
-//Simple Fetch 
+//Simple Fetch
 
 fetch('https://jsonplaceholder.typicode.com/users/1')
     .then((response  => (response .json())))
@@ -18,3 +18,8 @@ fetch('https://jsonplaceholder.typicode.com/users/1')
     const userAddress = document.querySelector('#user-address')
     userEmail.textContent = data.address.street
 })
+
+// old Fetch
+
+
+console.log("Thisi sisisisis")
